@@ -1,0 +1,115 @@
+.dropdown a{
+    text-decoration: none;
+    
+}
+
+/*-----------------------------------------*/
+/*------ father with son - css ----*/
+/*----------------------------------------*/
+.dropdown .dropdown-link{
+    position: relative;
+    display: block;
+}
+
+/*-----------------------------------------*/
+/*------ plus_icon- css ----opening sons*/
+/*----------------------------------------*/
+.dropdown .plus_icon{
+    width:20px;
+    height: 20px;
+    float:left;
+    position: absolute;
+    right: 260px;
+    top: 19px;
+}
+
+
+
+.dropdown .plus_icon.open {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -moz-transition: -moz-transfrom 0.6s;
+    -o-transition: -o-transfrom 0.6s;
+    -webkit-transition: -webkit-transfrom 0.6s;
+    transition: transform 0.6s;
+}
+
+.dropdown .plus_icon.close {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -moz-transition: -moz-transfrom 0.6s;
+    -o-transition: -o-transfrom 0.6s;
+    -webkit-transition: -webkit-transfrom 0.6s;
+    transition: transform 0.6s;
+}
+    
+/*-----------------------------------------*/
+/*------ /plus_icon - css ----opening sons*/
+/*----------------------------------------*/
+
+/*---------------------------------------------------*/
+/*------ dropdown menu items - css ----(links of son)*/
+/*---------------------------------------------------*/
+
+.dropdown .dropdown-menu{
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown .dropdown-menu li{
+    padding: 0;
+    direction: rtl;
+}
+
+.dropdown .dropdown-menu li a{
+    display: block;
+    font-weight: normal;
+    padding: 8px 43px 8px 32px;
+}
+
+/*---------------------------------------------------*/
+/*------ /dropdown menu items - css ----(links of son)*/
+/*---------------------------------------------------*/
+
+/*---------------------------------------------------*/
+/*------ showing/hiding son - css -------------------*/
+/*---------------------------------------------------*/
+
+.dropdown .show, .dropdown .hide{
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    
+}
+
+.dropdown .show{
+    display: block;
+    max-height: 9999px;
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition: max-height 2s ease-in;
+    /*overflow: visible;*/
+}
+
+.dropdown .hide{
+    max-height: 0;
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    transition: max-height ease-out;
+}
+
+/*---------------------------------------------------*/
+/*------ /showing/hiding son - css -------------------*/
+/*---------------------------------------------------*/

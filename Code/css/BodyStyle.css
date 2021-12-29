@@ -1,0 +1,10 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+
+#content{
+    left:0;
+    position: absolute;
+}

@@ -1,0 +1,292 @@
+
+/*----------------------------*/
+/*------ Menu Bar - css ------*/
+/*----------------------------*/
+#Bar {
+    position: fixed;
+    overflow: visible;
+
+    height: 100%;
+    right:0; 
+    background-color: #31373A;
+    z-index: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    width:80px;
+    
+}
+
+#Bar li{
+    color: white;
+    border-bottom: 1px solid #585E62;
+    border-top: 1px solid #585E62;
+    
+}
+
+#Size_div
+{
+  bottom:0;
+    position: absolute;
+   /* margin:0;*/
+}
+
+#Hebet_Logo_ul
+{
+     margin:0;
+}
+
+#hamburger_ul
+{
+    margin:0;
+}
+
+#progress_ul
+{
+margin-top:200px;
+}
+
+#Bar img {
+    cursor:pointer;
+}
+
+/*
+#progress_ul
+{
+list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+*/
+#Bar ul{
+    list-style-type: none;
+   /* margin: 0;*/
+    width: 100%;
+    padding: 0;
+}
+
+
+#hamburger_ul li:hover, #Prev:hover, #Next:hover{
+    background-color: #181B1C;
+}
+
+#progress_ul li{
+    position: relative;
+    border-top:0;
+    border-bottom:0;
+}
+
+
+#Menu_Icon{
+    width: 40%;
+    /*height: 40%;*/
+    padding-left: 32%;
+    padding-right: 32%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+}
+
+#li_Screen{
+    background-color: #31373A;
+}
+
+#li_Screen img{
+    padding-left: 30%;
+    padding-right: 25%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 40%;
+}
+
+#Prev , #Next{
+    width: 100%;
+    height: 100%;
+    background-color: #31373A;
+}
+
+#Prev img, #Next img{
+    width: 40%;
+    /*height: 50%;*/
+    padding-left: 30%;
+    padding-right: 25%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    
+}
+
+
+#Navigation_ul li:last-child{
+   // border: 0;
+}
+
+
+#Navigation_ul li#Next{
+    border-bottom: 0;
+}
+
+#Navigation_ul li:first-child{
+    border-bottom: 0;
+}
+  
+
+#Next{
+    background-color: #1A1A1A;
+    border-bottom: 0;
+}
+
+#Navigation_ul{
+  /*  bottom:0;*/
+    position: absolute;
+    margin:0;
+}
+
+
+#li_Clicks_Counter div{
+    color:white;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    height: 20px;
+}
+
+li#li_Clicks_Counter {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #31373A;
+}
+
+#div_Progress li{
+    border: none;
+    position: relative;
+    
+}
+
+
+#Hebet_logo img{
+    width: 80%;
+    /*height: 100%;*/
+    padding-left: 9%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+
+/*-----------------------------*/
+/*------ /Menu Bar - css ------*/
+/*-----------------------------*/
+
+
+
+/*---------------------------------*/
+/*------ Side Navigation - css ----*/
+/*--------------------------------*/
+.sidenav{
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color:#1A1A1A;
+    transition: 0.5s;
+    overflow-x: hidden;
+    direction: rtl;
+}
+
+.sidenav a{
+    padding: 16px 8px 16px 7px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #F2F2F2;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    list-style: none;
+    overflow: hidden;
+    width:285px;
+    font-weight: bold;
+    
+}
+
+
+/* The X sign */
+.closebtn img{
+    position: absolute;
+    top: 20px;
+   /* width: 25px;*/
+    height: 30px;
+    padding-right: 20px;
+}
+
+a.closebtn{
+    padding: 0px;
+}
+
+
+
+
+/*---------------------------------*/
+/*-------- menu - css -------------*/
+/*--------------------------------*/
+
+ #menu {
+     list-style: none;
+     padding: 0;
+     padding-top: 60px
+ }
+
+#menu .VHolder{
+    width: 17px;
+    /*height: 26px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    float: right;
+}
+
+#menu .dropdown-menu img{
+    width:10px;
+    padding-right: 4px;
+}
+     
+#menu li{
+    background: #1A1A1A;
+}
+#menu a:hover{
+    background-color: #4D4D4D;
+}
+
+#menu li:last-child #Credits_Link{
+    font-weight: normal;
+}
+
+.CurrentLink{
+    background-color: #F2F2F2 !important;
+    color: #1A1A1A !important;
+}
+
+
+
+/*---------------------------------*/
+/*-------- /menu - css -------------*/
+/*--------------------------------*/
+
+/*---------------------------------*/
+/*------ /Side Navigation - css ----*/
+/*--------------------------------*/
+
+/* The div shadow when the menu is opened */
+#shadow_div{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: none;
+    opacity: 0.6;
+    transition: 0.5s;
+    pointer-events:none;
+}

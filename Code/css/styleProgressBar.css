@@ -1,0 +1,57 @@
+/*
+ Modified from https://www.kodhus.com/css-only-step-progress-bar/
+*/
+#div_Progress {
+  margin: 0 auto;
+}
+
+#Menu_Bar li:second-child:hover{
+    background-color: #31373A;
+}
+
+
+.progressbar li{
+  list-style-type: none;
+  position: relative;
+    padding: 44%;
+    padding-bottom: 7%;
+    padding-top: 30%;
+    border: none;
+}
+
+
+/*circles*/
+.progressbar li:before {
+  width: 15px;
+  height: 15px;
+  content: ' ';
+  display: block;
+  border-radius: 50%;
+  background-color: #31373A;
+    border-color:  #a1a6a9;
+    border-style: solid;
+    border-width: 0.2vh;
+    position: relative;
+    left: -20%;
+}
+
+/*line*/
+.progressbar li:after {
+  width: 1px;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background-color:  #a1a6a9;
+    top: -49%;
+    left: 51%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+
+
+.progressbar li.current:before {
+  background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
